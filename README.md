@@ -17,7 +17,7 @@
 
 - has_many :items
 - has_many :comments
-- has_many :purchase_logs
+- has_many :orders
 
 ## items テーブル
 
@@ -37,9 +37,9 @@
 
 - has_many :comments
 - belongs_to :user
-- has_one :purchase_log
+- has_one :order
 
-## purchase_logs テーブル
+## orders テーブル
 
 | Column                | Type       | Options                        |
 | --------------------- | ---------- | ------------------------------ |
@@ -66,7 +66,7 @@
 
 ### Association
 
-- belongs_to :purchase_log
+- belongs_to :order
 
 ## comments テーブル
 
