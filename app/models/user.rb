@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :items, dependent: :destroy
+  has_many :orders, dependent: :destroy
 
   PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i.freeze
   NAME_REGEX = /\A[ぁ-んァ-ヶ一-龥々ー]+\z/.freeze
